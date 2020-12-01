@@ -199,6 +199,12 @@ Return
 ;SC07B & `;::Send ^{Left}
 ;SC07B & '::Send ^{Right}
 
+; CapsLock + H: backspace
+SC07B & h::Send {Backspace}
+
+; Alt + H: Ctrl + backspace
+!h::Send ^{Backspace}
+
 ; Alt + D: delete word to the right
 !d::Send ^{Delete}
 
