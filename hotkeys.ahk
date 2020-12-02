@@ -472,17 +472,18 @@ SC07B & i::Send ^+i          ; CapsLock + I: invert the selection
 #IfWinActive
 
 ; PowerPoint
-#IfWinActive ahk_class PP12FrameClass
+#IfWinActive ahk_class PPTFrameClass
 !WheelUp::Send ^+>           ; Alt + mouse wheel up: increase the font size
 !WheelDown::Send ^+<         ; Alt + mouse wheel down: decrease the font size
 SC07B & q::Send {AppsKey}o   ; CapsLock + Q: ???
-!#k::Send {AppsKey}ia        ; Alt + Win + K: Insert a row above
-!#j::Send {AppsKey}ib        ; Alt + Win + J: Insert a row below
-!#c::Send {Alt}jdaac         ; Alt + Win + C: Align objects vertically at the center
-!#h::Send {Alt}jdaav         ; Alt + Win + H: Equal spacing (horizontal)
-!#v::Send {Alt}jdaav         ; Alt + Win + V: Equal spacing (vertical)
-!#l::Send {Alt}jdaal         ; Alt + Win + L: Align left
-!#r::Send {Alt}jdaar         ; Alt + Win + R: Align right
+!#k::Send {AppsKey}ia        ; Win + Alt + K: Insert a row above
+!#j::Send {AppsKey}ib        ; Win + Alt + J: Insert a row below
+!#c::Send {Alt}jdaac         ; Win + Alt + C: Align center
+!#m::Send {Alt}jdaam         ; Win + Alt + M: Align middle
+!#h::Send {Alt}jdaah         ; Win + Alt + H: Equal spacing (horizontal)
+!#v::Send {Alt}jdaav         ; Win + Alt + V: Equal spacing (vertical)
+!#l::Send {Alt}jdaal         ; Win + Alt + L: Align left
+!#r::Send {Alt}jdaar         ; Win + Alt + R: Align right
 #IfWinActive
 
 ; Excel
